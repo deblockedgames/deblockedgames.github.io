@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DeblockedGames - Play Free Online Games
+title: DeblockedGames - Play Free Online Games | DeblockedGames
 description: Play free online games at DeblockedGames. Browse and enjoy a huge collection of fun games.
 ---
 
