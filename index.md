@@ -1,7 +1,7 @@
 ---
 layout: default
-title: SnookaGames - Play Free Online Games
-description: Play free online games at SnookaGames. Browse and enjoy a huge collection of fun games.
+title: DeblockedGames - Play Free Online Games
+description: Play free online games at DeblockedGames. Browse and enjoy a huge collection of fun games.
 ---
 
 <script>
