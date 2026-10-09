@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">DeblockedGames shield</title>
+  <path d="M256 24 448 96v127c0 123-76 218-192 265C140 441 64 346 64 223V96L256 24Z" fill="#243c2a" stroke="#a7d97a" stroke-width="16" stroke-linejoin="round"/>
+  <path d="M256 63 410 121v101c0 99-59 177-154 220-95-43-154-121-154-220V121l154-58Z" fill="#4d873c"/>
+  <path d="M166 239c5-24 25-40 50-40h80c25 0 45 16 50 40l18 83c4 17-15 29-29 18l-45-35h-68l-45 35c-14 11-33-1-29-18l18-83Z" fill="#f1f5e9"/>
+  <path d="M207 244v18h18v18h-18v18h-18v-18h-18v-18h18v-18h18Z" fill="#243c2a"/>
+  <circle cx="315" cy="255" r="10" fill="#243c2a"/>
+  <circle cx="341" cy="278" r="10" fill="#243c2a"/>
+  <path d="M248 121h16v32h32v16h-32v32h-16v-32h-32v-16h32v-32Z" fill="#d6efad"/>
+</svg>
