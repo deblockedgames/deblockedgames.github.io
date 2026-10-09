@@ -43,7 +43,7 @@ description: Play free online games at DeblockedGames. Browse and enjoy a huge c
 
 <p id="s" style="display: none;"></p>
 
-<p style="width:100%;text-align:center;"><span style="color: #ffa726;">{{ site.games | size }}</span> games and counting!</p>
+<p style="width:100%;text-align:center;"><span style="color: #a7d97a;">{{ site.games | size }}</span> games and counting!</p>
 
 <section class="game-grid">
   {% for game in site.games %}
@@ -69,9 +69,10 @@ description: Play free online games at DeblockedGames. Browse and enjoy a huge c
   .game-card {
     position: relative;
     display: block;
-    border-radius: 16px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: #222a24;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.28);
     cursor: pointer;
     text-decoration: none;
     color: inherit;
@@ -80,7 +81,7 @@ description: Play free online games at DeblockedGames. Browse and enjoy a huge c
 
   .game-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.42);
   }
 
   /* Game cover image */
@@ -88,7 +89,7 @@ description: Play free online games at DeblockedGames. Browse and enjoy a huge c
     width: 100%;
     height: 140px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 8px;
     display: block;
   }
 

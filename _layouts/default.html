@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} | SnookaGames</title>
+  <title>{{ page.title }} | DeblockedGames</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Your meta tags here -->
 
-  <link rel="icon" href="/assets/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/shield.svg">
 
   <!-- Cloudflare Web Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5f441a3804af4f86a81144ba91931cc1"}'></script>
@@ -14,23 +14,23 @@
 
   <!-- SEO -->
   <meta name="author" content="{{ page.author | escape }}">
-  <meta name="keywords" content="games, SnookaGames, {{ page.title | escape }}, online game, free game">
+  <meta name="keywords" content="games, DeblockedGames, {{ page.title | escape }}, online game, free game">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ page.title | escape }} | SnookaGames">
+  <meta property="og:title" content="{{ page.title | escape }} | DeblockedGames">
   <meta property="og:description" content="{{ page.description | escape }}">
   <meta property="og:image" content="{{ page.image | escape }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:site_name" content="SnookaGames">
+  <meta property="og:site_name" content="DeblockedGames">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title }} | SnookaGames">
+  <meta name="twitter:title" content="{{ page.title }} | DeblockedGames">
   <meta name="twitter:description" content="{{ page.description }}">
   <meta name="twitter:image" content="{{ page.image | escape }}">
-  <meta name="twitter:creator" content="@SnookaGames">
+  <meta name="twitter:creator" content="@DeblockedGames">
 </head>
 <body>
   {% include navbar.html %}
@@ -44,9 +44,21 @@
 <script src="/bgeffect.js"></script>
 
 <style>
+  :root {
+    color-scheme: dark;
+    --page-bg: #151a17;
+    --surface: #222a24;
+    --surface-hover: #2d382f;
+    --text: #e7eee8;
+    --muted: #aab5ac;
+    --accent: #83c45b;
+  }
+
   body {
     font-family: 'Arial Rounded MT Bold', 'Comic Sans MS', sans-serif;
     margin: 0;
+    background: var(--page-bg);
+    color: var(--text);
     overflow-x: hidden;
   }
 </style>
