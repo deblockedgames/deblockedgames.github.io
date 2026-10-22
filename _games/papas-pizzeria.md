@@ -1,8 +1,8 @@
 ---
 layout: game
-title: Papa's Pizzeria
+title: Papa's Games
 author: Flipline Studios
-description: Manage Papa's Pizzeria by preparing, baking, and serving pizzas to satisfy your customers and earn tips.
-embed: /ruffle.html?file=/assets/games/pizzeria.swf
+description: Play every papas game:).
+embed: /assets/games/papas games/index.html
 image: /assets/images/pizzeria.jpg
 ---
