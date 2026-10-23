@@ -96,6 +96,11 @@
       return;
     }
 
+    const icon = blankWindow.document.createElement('link');
+    icon.rel = 'icon';
+    icon.href = 'data:,';
+    blankWindow.document.head.appendChild(icon);
+
     const frame = blankWindow.document.createElement('iframe');
     frame.src = window.location.href;
     frame.title = document.title;
