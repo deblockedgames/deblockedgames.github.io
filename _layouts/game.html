@@ -184,8 +184,11 @@
 
     <section class="game-content">
         <div class="iframe-wrapper">
-          <!-- <iframe src="{{ page.embed }}" allowfullscreen></iframe> -->
-          <iframe src="/assets/games/splash.html?title={{ page.title }}&description={{ page.description }}&author={{ page.author }}&embed={{ page.embed }}" allowfullscreen></iframe>
+          {% if page.external_game %}
+            <iframe src="{{ page.embed | escape }}" allowfullscreen></iframe>
+          {% else %}
+            <iframe src="/assets/games/splash.html?title={{ page.title }}&description={{ page.description }}&author={{ page.author }}&embed={{ page.embed }}" allowfullscreen></iframe>
+          {% endif %}
         </div>
         <div class="game-footer">
           <img src="{{ page.image }}" alt="{{ page.title }}">
