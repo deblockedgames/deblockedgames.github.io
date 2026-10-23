@@ -3,6 +3,6 @@ layout: game
 title: Geometry Dash
 author: geometrylite.io
 description: Jump your ways through the world of Geometry Dash, remade for the web! Keep in mind, we are not affiliated with RobTopGames AB.
-embed: /assets/games/geometry dash/index.html
+embed: https://alexboops.github.io/geometry-dash-webport/
 image: /assets/images/gd.png
 ---
