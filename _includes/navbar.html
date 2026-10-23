@@ -5,6 +5,7 @@
       <input name="query" type="text" placeholder="Search for a game...">
     </form>
   </div>
+  <button class="about-blank-button" id="open-in-about-blank" type="button">Open in about:blank</button>
 </header>
 
 <style>
@@ -61,4 +62,49 @@
   .search-bar input::placeholder {
     color: #aab5ac;
   }
+
+  .about-blank-button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border: 1px solid #465348;
+    border-radius: 20px;
+    background: #151a17;
+    color: #e7eee8;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .about-blank-button:hover {
+    background: #2d382f;
+  }
+
+  @media(min-width: 600px) {
+    .about-blank-button {
+      margin-top: 0;
+      margin-left: 16px;
+      flex: none;
+    }
+  }
 </style>
+
+<script>
+  document.getElementById('open-in-about-blank').addEventListener('click', function () {
+    const blankWindow = window.open('about:blank', '_blank');
+
+    if (!blankWindow) {
+      window.alert('The new tab was blocked. Allow pop-ups for this site and try again.');
+      return;
+    }
+
+    const frame = blankWindow.document.createElement('iframe');
+    frame.src = window.location.href;
+    frame.title = document.title;
+    frame.allow = 'autoplay; fullscreen; gamepad';
+    frame.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;border:0';
+    blankWindow.document.title = document.title;
+    blankWindow.document.documentElement.style.cssText = 'height:100%;margin:0';
+    blankWindow.document.body.style.cssText = 'height:100%;margin:0;overflow:hidden';
+    blankWindow.document.body.appendChild(frame);
+    blankWindow.opener = null;
+  });
+</script>
